@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#576D98"
+    tools:context=".D20">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/strr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Strenght"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+
+                <RadioButton
+                    android:id="@+id/dexx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dexterity"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+
+                <RadioButton
+                    android:id="@+id/conn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Constitution"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+
+                <RadioButton
+                    android:id="@+id/intt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intelligence"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+
+                <RadioButton
+                    android:id="@+id/wiss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wisdom"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+
+                <RadioButton
+                    android:id="@+id/chaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Charisma"
+                    android:textColor="#000000"
+                    app:buttonTint="#7E4EED" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/Shtraf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C помехой"
+                    android:textColor="#000000"
+                    app:buttonTint="#000000" />
+
+                <RadioButton
+                    android:id="@+id/Bonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="С преимуществом"
+                    android:textColor="#000000"
+                    app:buttonTint="#000000" />
+
+                <RadioButton
+                    android:id="@+id/Nothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ничего из этого"
+                    android:textColor="#000000"
+                    app:buttonTint="#000000" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Штраф/бонус:"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ShtrafBonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Целевое число:"
+                android:textColor="#020202"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/CelNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#070707" />
+
+            <Button
+                android:id="@+id/FN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="D20"
+                android:text="Бросить"
+                android:textSize="36sp"
+                app:backgroundTint="#020202" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
